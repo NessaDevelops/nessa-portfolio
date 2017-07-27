@@ -2,6 +2,31 @@
   text-align: center;
 }
 
+.home-logo {
+  height: 80px;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-size: 76px;
+  margin: 0 60px;
+}
+
+.subtitle {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: bolder;
+  letter-spacing: 6px;
+  margin: 10px 60px 14px 60px;
+}
+
+.hobbies {
+  font-family: OpenSans;
+  margin-top: 6px;
+  font-size: 14px;
+  letter-spacing: 6px;
+}
+
 /* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
