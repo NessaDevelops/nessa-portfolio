@@ -7,36 +7,10 @@
   height: 80px;
 }
 
-.subtitle {
-  font-family: OpenSans;
-  font-size: 16px;
-  font-weight: bolder;
-  letter-spacing: 6px;
-  margin: 10px 60px 14px 60px;
-}
-
-.hobbies {
-  font-family: OpenSans;
-  margin-top: 6px;
-  font-size: 14px;
-  letter-spacing: 6px;
-}
-
 /* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-} */
-
-/* .App-intro {
-  font-size: large;
-} */
 
 /* @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
