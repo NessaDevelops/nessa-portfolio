@@ -1,31 +1,31 @@
 @font-face {
     font-family: Montserrat;
-    src: url("./fonts/Montserrat-Regular.otf");
+    src: url("./fonts/Montserrat/Montserrat-Regular.otf");
 }
 
 @font-face {
     font-family: MontserratBold;
-    src: url("./fonts/Montserrat-Bold.otf");
+    src: url("./fonts/Montserrat/Montserrat-Bold.otf");
 }
 
 @font-face {
     font-family: MontserratLight;
-    src: url("./fonts/Montserrat-Light.otf");
+    src: url("./fonts/Montserrat/Montserrat-Light.otf");
 }
 
 @font-face {
     font-family: MontserratUltraLight;
-    src: url("./fonts/Montserrat-UltraLight.otf");
+    src: url("./fonts/Montserrat/Montserrat-UltraLight.otf");
 }
 
 @font-face {
     font-family: OpenSans;
-    src: url("./fonts/open_sans.ttf");
+    src: url("./fonts/OpenSans/open_sans.ttf");
 }
 
-.Montserrat { font-family: OpenSans, Sans-Serif; }
-.MontserratBold { font-family: OpenSansBold, Sans-Serif; }
-.MontserratLight { font-family: OpenSansBold, Sans-Serif; }
-.MontserratUltraLight { font-family: OpenSansBold, Sans-Serif; }
-.OpenSans { font-family: OpenSansBold, Sans-Serif; }
+.Montserrat { font-family: Montserrat, Sans-Serif; }
+.MontserratBold { font-family: MontserratBold, Sans-Serif; }
+.MontserratLight { font-family: MontserratLight, Sans-Serif; }
+.MontserratUltraLight { font-family: MontserratUltraLight, Sans-Serif; }
+.OpenSans { font-family: OpenSans, Sans-Serif; }
 
