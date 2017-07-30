@@ -6,7 +6,7 @@ import '../../styles/theme.css';
 class Home extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="container">
         <p>hi my name is</p>
         <h1>nessa.</h1>
         <p>i&#39;m a web designer</p>

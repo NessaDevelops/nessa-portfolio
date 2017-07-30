@@ -1,10 +1,8 @@
-.App {
-  width: 80%;
+.container {
+  width: calc(100% / 15 * 9);
+  margin: 0 auto;
+  padding-top: 26vh;
   font-size: 2em;
-}
-
-.home-logo {
-  height: 80px;
 }
 
 /* .App-logo {
