@@ -12,6 +12,7 @@ nav p {
 }
 
 nav p:hover {
-  border-bottom: solid 2px;
+  padding-bottom: .2em;
+  border-bottom: solid 4px;
   border-bottom-color:rgba(0, 0, 0, 0.4);
 }
