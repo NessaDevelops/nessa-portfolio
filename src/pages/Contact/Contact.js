@@ -5,10 +5,7 @@ class Contact extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <h2>Welcome to React</h2>
-        </div>
-        <h1>cONTACT</h1>
+        <h1>CONTACT</h1>
       </div>
     );
   }
