@@ -1,4 +1,4 @@
-.container {
+.wrapper {
   width: calc(100% / 15 * 9);
   margin: 0 auto;
   padding-top: 30vh;
@@ -10,7 +10,7 @@
   padding-bottom: .25em;
 }
 
-.container p {
+.wrapper p {
   position: relative;
   padding-left: .5em;
 }

@@ -1,0 +1,17 @@
+nav {
+  float: right;
+  padding: 1em;
+}
+
+nav p {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  margin: 1em 2em;
+}
+
+nav p:hover {
+  border-bottom: solid 2px;
+  border-bottom-color:rgba(0, 0, 0, 0.4);
+}
