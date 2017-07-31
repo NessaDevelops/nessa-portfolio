@@ -1,8 +1,23 @@
 .container {
   width: calc(100% / 15 * 9);
   margin: 0 auto;
-  padding-top: 26vh;
+  padding-top: 30vh;
   font-size: 2em;
+}
+
+.name {
+  line-height: .4em;
+  padding-bottom: .25em;
+}
+
+.container p {
+  position: relative;
+  padding-left: .5em;
+}
+
+.smol {
+  font-family: MontserratUltraLight;
+  font-size: .8em;
 }
 
 /* .App-logo {
