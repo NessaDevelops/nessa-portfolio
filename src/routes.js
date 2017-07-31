@@ -10,7 +10,7 @@ class Routes extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Route path='/' component={Home} />
+          <Route exact path='/' component={Home} />
           <Route path='/contact' component={Contact} />
           <Route path='/about' component={About} />
           <Route path='/404' component={NotFound} />
