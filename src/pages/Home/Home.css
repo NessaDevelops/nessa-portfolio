@@ -1,7 +1,7 @@
 .wrapper {
-  width: calc(100% / 15 * 9);
+  width: 50rem;
   margin: 0 auto;
-  padding-top: 30vh;
+  padding-top: 34vh;
   font-size: 2em;
 }
 
