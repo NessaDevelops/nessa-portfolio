@@ -5,12 +5,19 @@
   font-size: 2em;
 }
 
+.hi {
+  width: 1em;
+  float: left;
+  padding-right: 1.6rem;
+  opacity: 0;
+}
+
 .name {
   line-height: .4em;
   padding-bottom: .25em;
 }
 
-.wrapper p {
+.wrapper p:not(.hi), wrapper span {
   position: relative;
   padding-left: .5em;
 }
