@@ -1,18 +1,72 @@
 nav {
   float: right;
   padding: 1em;
-}
+}  
 
 nav p {
-  color: #000;
-  text-decoration: none;
+  list-style: none;
   display: inline-block;
-  position: relative;
+  padding: .75em;
+  text-decoration: none;
+  color: #000;
   margin: 1em 2em;
 }
 
 nav p:hover {
-  padding-bottom: .2em;
-  border-bottom: solid 4px;
-  border-bottom-color:rgba(0, 0, 0, 0.4);
+  color: #FFF;
+}
+
+/* stroke */
+nav.fill p {
+  position: relative;
+}
+
+nav.fill p:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+nav.fill p:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+
+nav.fill p:hover {
+  color: #fff;
+  z-index: 1;
+}
+
+nav.fill p:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
 }
