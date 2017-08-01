@@ -12,6 +12,12 @@ nav p {
   margin: 1em 2em;
 }
 
+nav p,
+nav p:after,
+nav p:before {
+  transition: color .5s;
+}
+
 nav p:hover {
   color: #FFF;
 }
@@ -32,6 +38,10 @@ nav.fill p:after {
   color: transparent;
   background: #aaa;
   height: 1px;
+}
+
+nav.fill p {
+  transition: color 2s;
 }
 
 nav.fill p:after {
