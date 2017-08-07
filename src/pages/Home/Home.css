@@ -26,6 +26,6 @@
   font-size: .8em;
 }
 
-.hi, .name, .smol, .job {
+.nav {
   opacity: 0;
 }

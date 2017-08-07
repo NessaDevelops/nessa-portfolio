@@ -7,7 +7,7 @@ import '../../styles/theme.css';
 class Home extends Component {
   
   componentDidMount() {
-    var hiAnimate = anime({
+    anime({
       targets: ['.hi'],
       translateX: [-310, 15],
       delay: 800,
@@ -17,9 +17,36 @@ class Home extends Component {
       },
     });
 
-    var textAnimate = anime({
-      targets: ['.name, .smol, .job'],
-      delay: 1200,
+    anime({
+      targets: ['.my'],
+      delay: 2000,
+      opacity: {
+        value: [0, 1],
+        duration: 12000,
+      },
+    });
+
+    anime({
+      targets: ['.name'],
+      delay: 3400,
+      opacity: {
+        value: [0, 1],
+        duration: 12000,
+      },
+    });
+
+    anime({
+      targets: ['.job'],
+      delay: 5000,
+      opacity: {
+        value: [0, 1],
+        duration: 12000,
+      },
+    });
+
+    anime({
+      targets: ['.smol'],
+      delay: 6000,
       opacity: {
         value: [0, 1],
         duration: 10000,
@@ -32,7 +59,7 @@ class Home extends Component {
       <div className="container">
         <NavBar></NavBar>
         <div className="wrapper">  
-          <span><p className="hi" data-duration="2000">hi</p> my name is</span>
+          <div className="hi">hi</div><div className="my"> my name is</div>
           <h1 className="name">nessa.</h1>
           <p className="job">&amp; i&#39;m a full stack web developer</p>
           <p className="smol">(plus i really enjoy design)</p>                
