@@ -4,20 +4,20 @@
   padding-top: 24vh;
 }
 
-form {
-    width: 46rem;
-    display: flex;
-    flex-direction: column;
-}
-
 .form-wrapper h2 {
     width: 46rem;
     line-height: 1.4em;
 }
 
-input[type=text], textarea {
+.form-group {
+    width: 46rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
     margin-top: 16px;
-    border: 1px solid #FFF;
+    border: none;
     background-color: #E2E5E5;
 }
 
@@ -26,7 +26,7 @@ textarea {
     height: 180px;
 }
 
-input[type=submit] {
+.btn {
     width: 35%;
     margin-top: 20px;
     color: #FFF;
@@ -35,7 +35,7 @@ input[type=submit] {
     text-transform: uppercase;
 }
 
-input[type=submit], input[type=text], textarea {
+.btn, input, textarea {
     transition: all 0.5s ease;
     padding: 12px;
     font-size: 20px;
@@ -45,12 +45,11 @@ input[type=submit], input[type=text], textarea {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-input[type=text]:focus, textarea:focus {
-    border-color: #D3D3D3;
+input:focus, textarea:focus {
     background-color: #919FAF;
 }
 
-input[type=submit]:focus {
+.btn:focus {
     filter: brightness(85%);
 }
 
@@ -70,6 +69,19 @@ input:focus, textarea:focus {
     color: #FFF;
 }
 
+input.active:valid {
+  box-shadow: 0 0 5px 1px #2AB0C5;
+}
+
+input.active:invalid {
+  box-shadow: 0 0 5px 1px #FF0000;
+}
+
+.error {
+  color: #FF0000;
+  margin-top: 5px;
+}
+
 /* .linkedin {
 	width: 40px;
     height: 40px;
@@ -77,8 +89,3 @@ input:focus, textarea:focus {
     background-image: url("../img/linkedin.png"); 
     background-size: cover;
 } */
-
-.error {
-  color: #FF0000;
-  text-align: left;
-}

@@ -7,7 +7,7 @@ class Navbar extends React.Component {
   componentDidMount() {
     anime({
         targets: ['.fill'],
-        delay: 6000,
+        delay: 7000,
         opacity: {
           value: [0, 1],
           duration: 10000,
