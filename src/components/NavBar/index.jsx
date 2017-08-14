@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import anime from 'animejs';
 import {Link} from 'react-router-dom';
 import './styles.css';
 
-class Navbar extends React.Component {
+class Navbar extends Component {
   componentDidMount() {
     anime({
         targets: ['.fill'],

@@ -1,17 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './styles.css';
 
-const TextInput = React.createClass({
-  propTypes: {
-      type: React.PropTypes.string.isRequired,
-      id: React.PropTypes.string.isRequired,
-      name: React.PropTypes.string.isRequired,
-      reff: React.PropTypes.string.isRequired,
-      placeholder: React.PropTypes.string.isRequired,
-      value: React.PropTypes.string.isRequired,
-      onChange: React.PropTypes.func.isRequired,
-      error: React.PropTypes.string.isRequired
-  },
+class TextInput extends Component {
   render() {
     return (
       <div className="form-group">
@@ -28,6 +18,17 @@ const TextInput = React.createClass({
       </div>
     );
   }
-});
+};
+
+TextInput.propTypes = {
+  type: React.PropTypes.string.isRequired,
+  id: React.PropTypes.string.isRequired,
+  name: React.PropTypes.string.isRequired,
+  reff: React.PropTypes.string.isRequired,
+  placeholder: React.PropTypes.string.isRequired,
+  value: React.PropTypes.string.isRequired,
+  onChange: React.PropTypes.func.isRequired,
+  error: React.PropTypes.string.isRequired
+}
 
 export default TextInput;

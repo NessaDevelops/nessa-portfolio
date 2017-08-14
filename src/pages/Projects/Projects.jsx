@@ -2,24 +2,27 @@ import React, { Component } from 'react';
 import NavBar from '../../components/NavBar';
 import './Projects.css';
 
-const Tile = React.createClass({
-  propTypes: {
-    src: React.PropTypes.string.isRequired,
-    title: React.PropTypes.string.isRequired
-  },
+class Tile extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     var tileStyle = {
       background: 'url(' + this.props.src + ') no-repeat center center',
       backgroundSize: 'cover'
     };
-
     return (
       <div style={tileStyle} className="tile">
         <span>{this.props.title}</span>
       </div>
     );
   }
-});
+};
+
+Tile.propTypes = {
+  src: React.PropTypes.string.isRequired,
+  title: React.PropTypes.string.isRequired
+}
 
 class TileList extends Component {
   constructor(props) {

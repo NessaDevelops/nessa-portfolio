@@ -1,18 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './styles.css';
 
-const ChButton = React.createClass({
-  propTypes: {
-    label: React.PropTypes.string.isRequired,
-    size: React.PropTypes.string,
-    style: React.PropTypes.string,
-    onClick: React.PropTypes.func,
-    disabled: React.PropTypes.bool,
-    id: React.PropTypes.string,
-    type: React.PropTypes.string,
-    className: React.PropTypes.string
-  },
-
+class ChButton extends Component {
   render() {
     const DEFAULT_SIZE = 'Large';
     const DEFAULT_STYLE = 'Primary';
@@ -32,6 +21,17 @@ const ChButton = React.createClass({
       </button>
     );
   }
-});
+};
+
+ChButton.propTypes = {
+  label: React.PropTypes.string.isRequired,
+  size: React.PropTypes.string,
+  style: React.PropTypes.string,
+  onClick: React.PropTypes.func,
+  disabled: React.PropTypes.bool,
+  id: React.PropTypes.string,
+  type: React.PropTypes.string,
+  className: React.PropTypes.string
+}
 
 export default Button;
