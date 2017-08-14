@@ -9,11 +9,12 @@ const Tile = React.createClass({
   },
   render() {
     var tileStyle = {
-      background: 'url(' + this.props.src + ') no-repeat center center'
+      background: 'url(' + this.props.src + ') no-repeat center center',
+      backgroundSize: 'cover'
     };
 
     return (
-      <div className="tile">
+      <div style={tileStyle} className="tile">
         <span>{this.props.title}</span>
       </div>
     );
@@ -25,13 +26,13 @@ class TileList extends Component {
     super(props);
     this.state = {
       tiles: [
-        { imgSrc: "../../imgs/bucketlist.png", title: "Bucketlist" },
-        { imgSrc: "../../imgs/primary.png", title: "Primary Services" },
-        { imgSrc: "../../imgs/bucketlist.png", title: "ArtObjx" },
-        { imgSrc: "../../imgs/bucketlist.png", title: "Farm Thing" },
-        { imgSrc: "../../imgs/bucketlist.png", title: "Five" },
-        { imgSrc: "../../imgs/bucketlist.png", title: "Six" },
-        { imgSrc: "../../imgs/bucketlist.png", title: "Seven" }
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Bucketlist" },
+        { imgSrc: "/static/media/primary.c9024567.png", title: "Primary Services" },
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "ArtObjx" },
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Farm Thing" },
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Five" },
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Six" },
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Seven" }
       ]
     }
   }

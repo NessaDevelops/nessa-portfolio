@@ -17,11 +17,11 @@
   flex-grow: 1;
   height: 14em;
   width: 14em;
-  background: url("../../imgs/bucketlist.png") no-repeat center center; 
+  /* background: url("../../imgs/bucketlist.png") no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .tile:last-of-type {
