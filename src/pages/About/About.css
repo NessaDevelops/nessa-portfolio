@@ -1,0 +1,10 @@
+.wrapper {
+  width: 50rem;
+  margin: 0 auto;
+  padding-top: 24vh;
+}
+
+.wrapper h2 {
+    width: 46rem;
+    line-height: 1.4em;
+}
