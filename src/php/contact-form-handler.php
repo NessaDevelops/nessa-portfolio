@@ -1,13 +1,13 @@
 <?php
     $errors = '';
     $myemail = 'nessa.develops@gmail.com';
-    if(empty($_POST['name'])  ||
+    if(empty($_POST['fname'])  ||
     empty($_POST['email']) ||
     empty($_POST['message']))
     {
         $errors .= "\n Error: all fields are required";
     }
-    $name = $_POST['name'];
+    $name = $_POST['fname'];
     $email_address = $_POST['email'];
     $message = $_POST['message'];
     if (!preg_match(
@@ -20,9 +20,9 @@
     if( empty($errors))
     {
     $to = $myemail;
-    $email_subject = "Contact form submission: $name";
+    $email_subject = "Contact form submission: $fname";
     $email_body = "You have received a new message. ".
-    " Here are the details:\n Name: $name \n ".
+    " Here are the details:\n Name: $fname \n ".
     "Email: $email_address\n Message \n $message";
     $headers = "From: $myemail\n";
     $headers .= "Reply-To: $email_address";
