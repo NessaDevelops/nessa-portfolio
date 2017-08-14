@@ -1,0 +1,25 @@
+.wrapper {
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 24vh;
+}
+
+.wrapper h2 {
+    line-height: 1.4em;
+}
+
+.tiles {
+  height: 40rem;
+  display: flex;
+  flex: row wrap; 
+}
+
+.tile {
+  height: 100%;
+  width: 100%;
+  background: url("../../imgs/bucketlist.png") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './Contact.css';
 import NavBar from '../../components/NavBar';
-import ValidateForm from './form';
-import FormHandler from '../../php/contact-form-handler.php';
-import $ from 'jquery';
+// import ValidateForm from './form';
+// import $ from 'jquery';
 
 class Contact extends Component {
   constructor(props) {
@@ -37,6 +36,15 @@ class Contact extends Component {
       console.log('form is invalid: do not submit');
     } else {
       console.log('form is valid: submit');
+      // $.ajax({  
+      //   type: "POST",  
+      //   url: "contact-form-handler.php", 
+      //   data: { form: this.state },
+      //   success: function(response) {
+      //     // content.html(response);
+      //     return response;
+      //   }
+      // });
     }
   }
 
@@ -76,11 +84,11 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="content">
+      <div className="container">
         <NavBar></NavBar>
         <div className="form-wrapper">
           <h2>Enjoy my work?<br/>Send me an email if you&#39;d like to hire me, collaborate, or have any questions.</h2>
-          <form noValidate method="POST" id="contactForm" name="contactform" action="../../php/contact-form-handler.php">
+          <form noValidate method="POST" id="contactForm" name="contactform" action="contact-form-handler.php">
             <div className="form-group">
               <input className="form-control"
                 type="text"
