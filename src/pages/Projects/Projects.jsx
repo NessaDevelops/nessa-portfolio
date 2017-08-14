@@ -3,9 +3,6 @@ import NavBar from '../../components/NavBar';
 import './Projects.css';
 
 class Tile extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     var tileStyle = {
       background: 'url(' + this.props.src + ') no-repeat center center',
