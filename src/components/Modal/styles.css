@@ -5,10 +5,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 9999;
-    background: #FFF;
-    opacity: .8;
+    z-index: 9998;
+    background: hsl(0, 0%, 100%);
     color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .backdropStyle {
@@ -17,6 +19,6 @@
     height: 100%;
     top: 0px;
     left: 0px;
-    z-index: 9998;
+    z-index: 9997;
     background: rgba(0, 0, 0, 0.3);
 }

@@ -84,8 +84,8 @@
 .close {
   height: 2em;
   width: 2em;
-  float: right;
   margin: 1em;
+  align-self: flex-end;
   color: #000;
   cursor: pointer;
   background: url("../../imgs/close.png") no-repeat center center; 
@@ -94,3 +94,29 @@
   -o-background-size: cover;
   background-size: cover;
 }
+
+.project-wrapper {
+  width: 100%;
+  margin-top: 10em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.project-left {
+  height: 30rem;
+  width: 35rem;
+  align-self: flex-start;
+  margin-left: 1em;
+  margin-right: 3em;
+}
+
+.project-left .desc {
+  line-height: 2em;
+}
+
+.project-right {
+  height: 30em;
+  width: 35em;
+  align-self: flex-end;
+  margin-right: 1em;
+}	

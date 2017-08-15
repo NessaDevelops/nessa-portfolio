@@ -33,8 +33,14 @@ class Tile extends Component {
         </div>
         <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
             <div className="close" onClick={() => this.closeModal()} />
-            <h2>{this.props.title}</h2>
-            <p>Great project</p>
+            <div className="project-wrapper">
+              <div className="project-left">
+                <h2>{this.props.title}</h2>
+                <p>{this.props.role}</p>
+                <p className="desc">{this.props.desc}</p>
+              </div>
+              <div className="project-right" style={tileStyle}></div>
+            </div>
         </Modal>
       </div>
     );
@@ -43,7 +49,9 @@ class Tile extends Component {
 
 Tile.propTypes = {
   src: React.PropTypes.string.isRequired,
-  title: React.PropTypes.string.isRequired
+  title: React.PropTypes.string.isRequired,
+  role: React.PropTypes.string.isRequired,
+  desc: React.PropTypes.string.isRequired
 }
 
 class TileList extends Component {
@@ -51,19 +59,26 @@ class TileList extends Component {
     super(props);
     this.state = {
       tiles: [
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "A Drop in the Bucket" },
-        { imgSrc: "/static/media/primary.c9024567.png", title: "Primary Services" },
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "ArtObjx" },
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Farm Thing" },
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Five" },
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Six" },
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Seven" }
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "A Drop in the Bucket", role: "UX/UI Design",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
+        { imgSrc: "/static/media/primary.c9024567.png", title: "Primary Services", role: "UX/UI Design",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "ArtObjx", role: "UX/UI Design",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Farm Thing", role: "UX/UI Design",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Five", role: "UX/UI Design",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Six", role: "UX/UI Design",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Seven", role: "UX/UI Design",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." }
       ]
     }
   }
   render() {
     const tileList = this.state.tiles.map((tile, index) =>
-      <Tile key={index} src={tile.imgSrc} title={tile.title}></Tile>
+      <Tile key={index} src={tile.imgSrc} title={tile.title} role={tile.role} desc={tile.desc}></Tile>
     );
     return (
       <div className="tiles">{tileList}</div>
