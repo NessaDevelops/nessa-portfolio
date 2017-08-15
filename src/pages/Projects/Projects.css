@@ -80,3 +80,17 @@
 .tile:hover .view {
   opacity: 1;
 }
+
+.close {
+  height: 2em;
+  width: 2em;
+  float: right;
+  margin: 1em;
+  color: #000;
+  cursor: pointer;
+  background: url("../../imgs/close.png") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
