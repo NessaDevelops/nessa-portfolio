@@ -1,10 +1,44 @@
-.wrapper {
-  width: 50rem;
+.about-container .wrapper {
+  width: 60rem;
   margin: 0 auto;
   padding-top: 24vh;
 }
 
-.wrapper h2 {
+.about-container .wrapper h2 {
     width: 46rem;
     line-height: 1.4em;
+}
+
+.about-container .content {
+  margin-top: 2em;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1rem;
+}
+
+.about-container .content div {
+  margin-left: 2em;
+}
+
+.about-container .me {
+	width: 250px;
+	max-width: 550px;
+  height: 270px;
+  background-image: url("../../imgs/nessa.jpg"); 
+  background-size: cover;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio a {
+  margin-bottom: 1em;
+  color: #2AB0C5;
+  text-decoration: none;
+}
+
+.faq h3 {
+  font-family: MontserratBold;
 }
