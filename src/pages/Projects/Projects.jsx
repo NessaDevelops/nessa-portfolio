@@ -9,8 +9,12 @@ class Tile extends Component {
       backgroundSize: 'cover'
     };
     return (
-      <div style={tileStyle} className="tile">
-        <span>{this.props.title}</span>
+      <div className="tile">
+        <div className="img" style={tileStyle}></div>
+        <div className="text">
+          <h2>{this.props.title}</h2>
+          <p className="view">VIEW PROJECT</p>
+        </div>
       </div>
     );
   }
@@ -26,7 +30,7 @@ class TileList extends Component {
     super(props);
     this.state = {
       tiles: [
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Bucketlist" },
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "A Drop in the Bucket" },
         { imgSrc: "/static/media/primary.c9024567.png", title: "Primary Services" },
         { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "ArtObjx" },
         { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Farm Thing" },
@@ -51,7 +55,7 @@ class Projects extends Component {
     return (
       <div className="container">
         <NavBar></NavBar>
-        <div className="wrapper">
+        <div className="projects-wrapper">
           <h2>Projects</h2>
           <TileList></TileList>
         </div>

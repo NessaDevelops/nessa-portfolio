@@ -1,22 +1,25 @@
-.wrapper {
+.projects-wrapper {
   width: 90vw;
   margin: 0 auto;
   padding-top: 24vh;
 }
 
-.wrapper h2 {
+.projects-wrapper h2 {
     line-height: 1.4em;
 }
 
 .tiles {
+  color: #FFF;
   display: flex;
   flex-flow: row wrap;
+  margin: 1em 0;
 }
 
 .tile {
   flex-grow: 1;
-  height: 14em;
-  width: 14em;
+  height: 24em;
+  width: 28em;
+  overflow: hidden;
   /* background: url("../../imgs/bucketlist.png") no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -24,6 +27,55 @@
     background-size: cover; */
 }
 
+.img {
+  height: 100%;
+  width: 100%;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}	
+	
+.img:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -moz-transform: scale(1.8);
+  -webkit-transform: scale(1.8);
+  transform: scale(1.8);
+}
+
 .tile:last-of-type {
   max-width: 800px;
+}
+
+.text {
+  position: relative;
+  z-index: 2;
+  margin: -3.4em 0 0 1em;
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.tile:hover .text {
+  margin: -5.4em 0 0 2em;
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.view {
+  opacity: 0;
+}
+
+.tile:hover .view {
+  opacity: 1;
 }
