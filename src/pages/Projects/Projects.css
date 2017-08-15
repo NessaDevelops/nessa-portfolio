@@ -20,6 +20,7 @@
   height: 24em;
   width: 28em;
   overflow: hidden;
+  cursor: pointer;
   /* background: url("../../imgs/bucketlist.png") no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;

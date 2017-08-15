@@ -1,20 +1,41 @@
 import React, { Component } from 'react';
 import NavBar from '../../components/NavBar';
+import Modal from '../../components/Modal';
 import './Projects.css';
 
 class Tile extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { isModalOpen: false }
+  }
+
+  openModal() {
+    this.setState({ isModalOpen: true })
+  }
+
+  closeModal() {
+    this.setState({ isModalOpen: false })
+  }
+
   render() {
-    var tileStyle = {
+    const tileStyle = {
       background: 'url(' + this.props.src + ') no-repeat center center',
       backgroundSize: 'cover'
     };
     return (
-      <div className="tile">
-        <div className="img" style={tileStyle}></div>
-        <div className="text">
-          <h2>{this.props.title}</h2>
-          <p className="view">VIEW PROJECT</p>
+      <div>
+        <div className="tile" onClick={() => this.openModal()}>
+          <div className="img" style={tileStyle}></div>
+          <div className="text">
+            <h2>{this.props.title}</h2>
+            <p className="view">VIEW PROJECT</p>
+          </div>
         </div>
+        <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
+            <h1>Modal title</h1>
+            <p>hello</p>
+            <p><button onClick={() => this.closeModal()}>Close</button></p>
+        </Modal>
       </div>
     );
   }

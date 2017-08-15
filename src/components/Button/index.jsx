@@ -34,4 +34,4 @@ ChButton.propTypes = {
   className: React.PropTypes.string
 }
 
-export default Button;
+export default ChButton;
