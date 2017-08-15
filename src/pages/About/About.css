@@ -5,19 +5,18 @@
 }
 
 .about-container .wrapper h2 {
-    width: 46rem;
-    line-height: 1.4em;
+  font-size: 1.2rem;
 }
 
 .about-container .content {
-  margin-top: 2em;
+  margin-top: 3em;
   display: flex;
   flex-flow: row wrap;
   font-size: 1rem;
 }
 
 .about-container .content div {
-  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .about-container .me {
