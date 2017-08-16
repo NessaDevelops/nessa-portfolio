@@ -52,6 +52,15 @@ class Home extends Component {
         duration: 10000,
       },
     });
+
+    anime({
+      targets: ['.fill'],
+      delay: 7000,
+      opacity: {
+        value: [0, 1],
+        duration: 10000,
+      },
+    });
   }
 
   render() {
