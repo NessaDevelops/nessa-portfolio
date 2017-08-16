@@ -29,19 +29,19 @@ class About extends Component {
             </div>
             <div className="bio">
               <div className="social-group">
-                <img src="../../imgs/linkedin.png" />
+                <div src="../../imgs/linkedin.png" />
                 <a href="https://www.linkedin.com/in/jenessa-stabler">LinkedIn</a>
               </div>
               <div className="social-group">
-                <img src="../../imgs/github.png" />
+                <div src="../../imgs/github.png" />
                 <a href="https://github.com/NessaDevelops">GitHub</a>
               </div>
               <div className="social-group">
-                <img src="../../imgs/codepen.png" />
+                <div src="../../imgs/codepen.png" />
                 <a href="https://codepen.io/NessaDevelops">CodePen</a>
               </div>
               <div className="social-group">
-                <img src="../../imgs/dribbble.png" />
+                <div src="../../imgs/dribbble.png" />
                 <a href="https://dribbble.com/NessaDevelops">Dribbble</a>
               </div>
             </div>

@@ -47,10 +47,10 @@
   flex-direction: row;
 }
 
-.social-group img {
+.social-group div {
   height: 2.5em;
   width: 2.5em;
-  margin: 0 .6em .6em 0;
+  margin-bottom: .6em;
   background: url("../../imgs/github.png") no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
