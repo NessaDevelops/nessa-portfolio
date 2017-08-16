@@ -10,10 +10,12 @@ class Tile extends Component {
   }
 
   openModal() {
+    document.body.style.overflowY = "hidden";
     this.setState({ isModalOpen: true })
   }
 
   closeModal() {
+    document.body.style.overflowY = "scroll";
     this.setState({ isModalOpen: false })
   }
 
@@ -63,11 +65,11 @@ class TileList extends Component {
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
         { imgSrc: "/static/media/primary.c9024567.png", title: "Primary Services", role: "UX/UI Design",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "ArtObjx", role: "UX/UI Design",
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Chronicled", role: "UX/UI Design",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Farm Thing", role: "UX/UI Design",
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Pugger", role: "UX/UI Design",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Five", role: "UX/UI Design",
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "NuGalactica", role: "UX/UI Design",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
         { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Six", role: "UX/UI Design",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
