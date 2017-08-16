@@ -54,7 +54,7 @@ class Home extends Component {
     });
 
     anime({
-      targets: ['.fill'],
+      targets: ['.fill, .logo'],
       delay: 7000,
       opacity: {
         value: [0, 1],

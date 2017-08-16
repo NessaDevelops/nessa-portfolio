@@ -26,6 +26,6 @@
   font-size: .8em;
 }
 
-.nav {
+.nav, .logo {
   opacity: 0;
 }
