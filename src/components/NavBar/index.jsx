@@ -6,17 +6,22 @@ import './styles.css';
 class Navbar extends Component {
   render() {
     return (
-      <nav className="fill">
-        <Link to="/about">
-          <p>About</p>
+      <header>
+        <Link to="/">
+          <div className="logo" />
         </Link>
-        <Link to="/projects">
-          <p>Projects</p>
-        </Link>
-        <Link to="/contact">
-          <p>Contact</p>
-        </Link>
-      </nav>
+        <nav className="fill">
+          <Link to="/about">
+            <p>About</p>
+          </Link>
+          <Link to="/projects">
+            <p>Projects</p>
+          </Link>
+          <Link to="/contact">
+            <p>Contact</p>
+          </Link>
+        </nav>
+      </header>
     );
   }
 }
