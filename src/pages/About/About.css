@@ -41,3 +41,19 @@
 .faq h3 {
   font-family: MontserratBold;
 }
+
+.social-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-group img {
+  height: 2.5em;
+  width: 2.5em;
+  margin: 0 .6em .6em 0;
+  background: url("../../imgs/github.png") no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
