@@ -1,6 +1,29 @@
 import React, { Component } from 'react';
 import './styles.css';
 
+class CarouselInput extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { first: 'checked' }
+  }
+  render() {
+    const index = this.props.index + 1;  
+    if (index == 1) {
+      return (
+        <input type="radio" id={index} name="thumb" checked="checked" className="carousel__activator"/>
+      )
+    } else {
+      return (
+      <input type="radio" id={index} name="thumb" className="carousel__activator"/>
+      )
+    }
+  }
+}
+
+CarouselInput.propTypes = {
+  index: React.PropTypes.number.isRequired
+}
+
 class Indicator extends Component {
   render() {
     const indicatorStyle = {
@@ -35,6 +58,9 @@ Slide.propTypes = {
 
 class Carousel extends Component {
   render() {
+    const inputList = this.props.imgs.map((slide, index) =>
+      <CarouselInput key={index} index={index} src={slide} />
+    );
     const slideList = this.props.imgs.map((slide, index) =>
       <Slide key={index} src={slide} />
     );
@@ -44,17 +70,7 @@ class Carousel extends Component {
     return (
     <div className="carousel-container">
       <ul className="carousel my-carousel carousel--translate carousel--thumb">
-        <input type="radio" id="1" name="thumb" checked="checked" className="carousel__activator"/>
-        <input type="radio" id="2" name="thumb" className="carousel__activator"/>
-        <input type="radio" id="3" name="thumb" className="carousel__activator"/>
-        <input type="radio" id="4" name="thumb" className="carousel__activator"/>
-        <input type="radio" id="5" name="thumb" className="carousel__activator"/>
-        <input type="radio" id="6" name="thumb" className="carousel__activator"/>
-        <input type="radio" id="7" name="thumb" className="carousel__activator"/>
-        <input type="radio" id="8" name="thumb" className="carousel__activator"/>
-        <input type="radio" id="9" name="thumb" className="carousel__activator"/>
-        <input type="radio" id="10" name="thumb" className="carousel__activator"/>
-        <input type="radio" id="11" name="thumb" className="carousel__activator"/>
+        {inputList}
         <div className="carousel__controls">
           <label htmlFor="11" className="carousel__control carousel__control--backward"></label>
           <label htmlFor="2" className="carousel__control carousel__control--forward"></label>
