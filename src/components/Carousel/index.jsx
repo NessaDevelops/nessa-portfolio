@@ -96,7 +96,7 @@ class Carousel extends Component {
     );
     return (
     <div className="carousel-container">
-      <ul className="carousel my-carousel carousel--translate carousel--thumb">
+      <ul className="carousel carousel--translate">
         {inputList}
         {controlList}
         <div className="carousel__track">

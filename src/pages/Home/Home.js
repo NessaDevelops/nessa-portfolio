@@ -68,7 +68,7 @@ class Home extends Component {
       <div className="container">
         <NavBar></NavBar>
         <div className="wrapper">  
-          <div className="hi">hi</div><div className="my"> my name is</div>
+          <div><p className="hi">hi</p><p className="my">my name is</p></div>
           <h1 className="name">nessa.</h1>
           <p className="job">&amp; i&#39;m a full stack web developer</p>
           <p className="smol">(plus i really enjoy design)</p>                

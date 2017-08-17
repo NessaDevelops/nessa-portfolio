@@ -6,6 +6,9 @@
 	position: relative;
 	padding: 0;
 	list-style: none;
+	border-radius: 5px;
+	border: 2px solid #FFF;
+	margin: 30px;
 }
 
 .carousel__controls,
@@ -350,12 +353,6 @@
 	display: inline-block;
 }
 
-.my-carousel {
-	border-radius: 5px;
-	border: 2px solid #c0c0c0;
-	margin: 30px;
-}
-
 .carousel__slide {
 	overflow: hidden;
 }
@@ -365,12 +362,12 @@
 }
 
 .carousel__slide,
-.carousel--thumb .carousel__indicators .carousel__indicator {
+.carousel .carousel__indicators .carousel__indicator {
 	background-size: cover;
 	background-position: center;
 }
 
-.carousel--thumb .carousel__indicators .carousel__indicator {
+.carousel .carousel__indicators .carousel__indicator {
 	height: 30px;
 	width: 30px;
 }

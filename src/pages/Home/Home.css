@@ -2,18 +2,21 @@
   width: 50rem;
   margin: 0 auto;
   padding-top: 22vh;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
-.hi {
-  width: 1em;
-  float: left;
-  padding-right: 1.6rem;
+.wrapper div {
+  display: flex;
+  flex-direction: row;
+}
+
+.my {
+  margin-left: .8rem;
 }
 
 .name {
   line-height: .4em;
-  padding-bottom: .25em;
+  padding-bottom: 4rem;
 }
 
 .wrapper p:not(.hi), wrapper span {
