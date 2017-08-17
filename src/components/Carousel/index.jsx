@@ -1,8 +1,28 @@
 import React, { Component } from 'react';
 import './styles.css';
 
+class Slide extends Component {
+  render() {
+    const slideStyle = {
+      backgroundImage: 'url(' + this.props.src + ')',
+      backgroundSize: 'cover',
+	    backgroundPosition: 'center'
+    };
+    return (
+      <li style={slideStyle} className="carousel__slide" /> 
+    )
+  }
+}
+
+Slide.PropTypes = {
+  src: React.PropTypes.string.isRequired
+}
+
 class Carousel extends Component {
   render() {
+    const slideList = this.props.imgs.map((slide, index) =>
+      <Slide key={index} src={slide} /> 
+    );
     return (
     <div className="carousel-container">
       <ul className="carousel my-carousel carousel--translate carousel--thumb">
@@ -32,11 +52,7 @@ class Carousel extends Component {
          <label htmlFor="K" className="carousel__control carousel__control--forward"></label>
         </div>
         <div className="carousel__track">
-          <li className="carousel__slide" /> 
-          <li className="carousel__slide" />
-          <li className="carousel__slide" />
-          <li className="carousel__slide" />
-          <li className="carousel__slide" />
+          {slideList}
         </div>
         <div className="carousel__indicators">
           <label htmlFor="K" className="carousel__indicator"></label>
@@ -51,8 +67,8 @@ class Carousel extends Component {
   }
 }
 
-// Carousel.PropTypes = {
-//     slides: React.PropTypes.array.isRequired
-// }
+Carousel.PropTypes = {
+  imgs: React.PropTypes.arrayOf(String).isRequired
+}
 
 export default Carousel;
