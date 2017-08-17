@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from '../../components/NavBar';
 import Modal from '../../components/Modal';
+import Carousel from '../../components/Carousel';
 import './Projects.css';
 
 class Tile extends Component {
@@ -41,7 +42,9 @@ class Tile extends Component {
                 <p>{this.props.role}</p>
                 <p className="desc">{this.props.desc}</p>
               </div>
-              <div className="project-right" style={tileStyle}></div>
+              <div className="project-right">
+                <Carousel></Carousel>
+              </div>
             </div>
         </Modal>
       </div>

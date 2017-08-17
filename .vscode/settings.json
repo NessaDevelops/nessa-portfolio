@@ -1,4 +1,5 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-    "php.validate.executablePath": "C:/php-7.1.8-nts-Win32-VC14-x86/php.exe"
+    "php.validate.executablePath": "C:/php-7.1.8-nts-Win32-VC14-x86/php.exe",
+    "editor.tabSize": 2
 }
