@@ -97,26 +97,12 @@
 
 .project-wrapper {
   width: 100%;
-  margin-top: 10em;
+  padding: 4em 8em;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-.project-left {
-  height: 30rem;
-  width: 35rem;
-  align-self: flex-start;
-  margin-left: 1em;
-  margin-right: 3em;
+  flex-direction: column;
+  align-items: center;
 }
 
-.project-left .desc {
+.project-wrapper .desc {
   line-height: 2em;
 }
-
-.project-right {
-  height: 30em;
-  width: 35em;
-  align-self: flex-end;
-  margin-right: 1em;
-}	

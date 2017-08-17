@@ -37,14 +37,11 @@ class Tile extends Component {
         <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
             <div className="close" onClick={() => this.closeModal()} />
             <div className="project-wrapper">
-              <div className="project-left">
-                <h2>{this.props.title}</h2>
-                <p>{this.props.role}</p>
-                <p className="desc">{this.props.desc}</p>
-              </div>
-              <div className="project-right">
-                <Carousel></Carousel>
-              </div>
+              <h2>{this.props.title}</h2>
+              <p>{this.props.role}</p>
+              <a href="">GitHub</a>
+              <Carousel></Carousel>
+              <p className="desc">{this.props.desc}</p>
             </div>
         </Modal>
       </div>
