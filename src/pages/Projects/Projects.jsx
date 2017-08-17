@@ -39,7 +39,7 @@ class Tile extends Component {
             <div className="project-wrapper">
               <h2>{this.props.title}</h2>
               <p>{this.props.role}</p>
-              <a href="">GitHub</a>
+              <a href={this.props.github}>GitHub</a>
               <Carousel></Carousel>
               <p className="desc">{this.props.desc}</p>
             </div>
@@ -53,6 +53,7 @@ Tile.propTypes = {
   src: React.PropTypes.string.isRequired,
   title: React.PropTypes.string.isRequired,
   role: React.PropTypes.string.isRequired,
+  github: React.PropTypes.string.isRequired,
   desc: React.PropTypes.string.isRequired
 }
 
@@ -61,26 +62,22 @@ class TileList extends Component {
     super(props);
     this.state = {
       tiles: [
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "A Drop in the Bucket", role: "UX/UI Design",
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "A Drop in the Bucket", role: "UX/UI Design", github: "https://github.com/NessaDevelops/A-Drop-in-the-Bucket",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
-        { imgSrc: "/static/media/primary.c9024567.png", title: "Primary Services", role: "UX/UI Design",
+        { imgSrc: "/static/media/primary.c9024567.png", title: "Primary Services", role: "UX/UI Design", github: "",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Chronicled", role: "UX/UI Design",
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Chronicled", role: "UX/UI Design", github: "https://github.com/chronicled/partner-portal-web",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Pugger", role: "UX/UI Design",
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Pugger", role: "UX/UI Design", github: "https://github.com/NessaDevelops/Pugger",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "NuGalactica", role: "UX/UI Design",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Six", role: "UX/UI Design",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." },
-        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "Seven", role: "UX/UI Design",
+        { imgSrc: "/static/media/bucketlist.2956f3dd.png", title: "NuGalega", role: "UX/UI Design", github: "https://github.com/erob2620/NUGalega",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi." }
       ]
     }
   }
   render() {
     const tileList = this.state.tiles.map((tile, index) =>
-      <Tile key={index} src={tile.imgSrc} title={tile.title} role={tile.role} desc={tile.desc}></Tile>
+      <Tile key={index} src={tile.imgSrc} title={tile.title} role={tile.role} github={tile.github} desc={tile.desc}></Tile>
     );
     return (
       <div className="tiles">{tileList}</div>
