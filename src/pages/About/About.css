@@ -2,10 +2,17 @@
   width: 60rem;
   margin: 0 auto;
   padding-top: 16vh;
+  text-align: center;
 }
 
 .about-container .wrapper h2 {
   font-size: 1.2rem;
+}
+
+.about-container .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 .about-container .content {
@@ -13,10 +20,6 @@
   display: flex;
   flex-flow: row wrap;
   font-size: 1rem;
-}
-
-.about-container .content div {
-  margin-right: 2em;
 }
 
 .about-container .me {
@@ -27,14 +30,13 @@
   background-size: cover;
 }
 
-.bio {
-  display: flex;
-  flex-direction: column;
+.bio a {
+  margin: .6em 0 0 .6em;
+  color: #2AB0C5;
 }
 
-.bio a {
-  margin-bottom: 1em;
-  color: #2AB0C5;
+.faq {
+  text-align: left;
 }
 
 .faq h3 {
@@ -55,4 +57,14 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+}
+
+.about-container .me, .about-container .faq, .about-container .bio {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem 3rem 0;
+}
+
+.about-container .bio {
+  margin-right: 0;
 }

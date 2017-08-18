@@ -78,7 +78,7 @@ class TileList extends Component {
             "/static/media/memory.0d478455.png",
             "/static/media/achievement.30d20648.png"
           ] },
-        { imgSrc: "/static/media/primary.c9024567.png", title: "Primary Services", role: "UX/UI Design", github: "",
+        { imgSrc: "/static/media/splash.f923149e.png", title: "Primary Services", role: "UX/UI Design", github: "",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi.",
           imgs: [ 
             "/static/media/splash.f923149e.png", 

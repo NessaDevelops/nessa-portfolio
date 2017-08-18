@@ -8,8 +8,10 @@ class About extends Component {
       <div className="about-container">
         <NavBar></NavBar>
         <div className="wrapper">
-          <h2>I create modern &amp; clean websites.</h2>
-          <h2>:]</h2>
+          <div className="intro">
+            <h2>I create modern &amp; clean websites.</h2>
+            <h2>:]</h2>
+          </div>
           <div className="content">
             <div className="me"></div>
             <div className="faq">
