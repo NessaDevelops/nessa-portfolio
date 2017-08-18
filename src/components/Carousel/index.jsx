@@ -29,10 +29,10 @@ class CarouselControls extends Component {
     const index = this.props.index + 1;
     let backwardsIndex = index - 1;
     let forwardsIndex = index + 1;
-    if (index == 1) {
-      backwardsIndex = 11;
+    if (index === 1) {
+      backwardsIndex = this.props.slideLength;
     }
-    if (index == 11) {
+    if (index === this.props.slideLength) {
       forwardsIndex = 1;
     }
     return (
@@ -45,7 +45,8 @@ class CarouselControls extends Component {
 }
 
 CarouselControls.propTypes = {
-  index: React.PropTypes.number.isRequired  
+  index: React.PropTypes.number.isRequired,
+  slideLength: React.PropTypes.number.isRequired
 }
 
 class Indicator extends Component {
@@ -86,7 +87,7 @@ class Carousel extends Component {
       <CarouselInput key={index} index={index} />
     );
     const controlList = this.props.imgs.map((slide, index) =>
-      <CarouselControls key={index} index={index} />
+      <CarouselControls key={index} index={index} slideLength={this.props.imgs.length} />
     );
     const slideList = this.props.imgs.map((slide, index) =>
       <Slide key={index} src={slide} />
