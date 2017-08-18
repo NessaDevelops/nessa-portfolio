@@ -5,7 +5,7 @@
 }
 
 .projects-wrapper h2 {
-    line-height: 1.4em;
+  line-height: 1.4em;
 }
 
 .tiles {
@@ -103,6 +103,23 @@
   align-items: center;
 }
 
-.project-wrapper .desc {
+.project-wrapper a {
+  margin-top: .2rem;
+  color: #2AB0C5;
+}
+
+.project-wrapper .summ, .project-wrapper .process, .project-wrapper .tech {
   line-height: 2em;
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.project-wrapper h3 {
+  font: 1.4rem MontserratBold;
+  margin: 2rem 0 1rem 0;
+}
+
+.project-wrapper h2 {
+  font: 2rem MontserratBold;
 }
