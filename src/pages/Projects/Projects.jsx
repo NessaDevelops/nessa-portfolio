@@ -46,7 +46,7 @@ class Tile extends Component {
                 <p>{this.props.summ}</p>
               </div>
               <div className="process">
-                <h3>The Process</h3>
+                <h3>Process</h3>
                 <p>{this.props.process}</p>
               </div>
               <div className="tech">
@@ -93,7 +93,7 @@ class TileList extends Component {
             "/static/media/memory.0d478455.png",
             "/static/media/achievement.30d20648.png"
           ] },
-        { imgSrc: "/static/media/splash.f923149e.png", title: "Primary Services", role: "UX/UI Design", github: "",
+        { imgSrc: "/static/media/splash.f923149e.png", title: "Primary Services", role: "UX+UI Design", github: "",
           summ: "Primary Services contacted me to work on redesigning & implementing a new way to search & view jobs on their current website. Their job search linked to Job Diva's web application & they wanted to have their own job search located on their website.",
           process: "I researched UI & UX practices used by other successful job recruitment company websites & showed my findings to the team I was working with at Primary Services. I crafted mockups using Illustrator & InDesign. We had meetings to discuss the process & I made revisions based on the feedback. I wanted to keep the color scheme & overall feel of the current website while giving the new designs a more modern feel that will also mesh if Primary Services were to modernized their website design in the future.",
           tech: "Illustrator, InDesign",
@@ -102,9 +102,9 @@ class TileList extends Component {
             "/static/media/jobsearch.c9024567.png"
           ]
         },
-        { imgSrc: "/static/media/signup1.872c46ec.png", title: "Chronicled", role: "UX/UI Design", github: "https://github.com/chronicled/partner-portal-web",
-          summ: "",
-          process: "",          
+        { imgSrc: "/static/media/signup1.872c46ec.png", title: "Chronicled", role: "Front-end / UX+UI Design", github: "https://github.com/chronicled/partner-portal-web",
+          summ: "Chronicled needed to hire interns for a team to work on their partner web portal. The partner web portal was not styled yet so the CSS needed to be added & th sign up flow was not complete.",
+          process: "For this project I learned React & Redux. This was the first time I had worked with a flux based technology. I worked with the designer to add his design mockups to the partner web portal using HTML5, CSS3, & flexbox -specifically. Three steps for the sign up flow needed to be added. I updated & deleted some of the existing components that were uneccessary while creating new ones. I created the logic & design for the password  strength indicator.",          
           tech: "React, ES6, Redux, Webpack",
           imgs: [
             "/static/media/signup1.872c46ec.png",
@@ -112,17 +112,17 @@ class TileList extends Component {
             "/static/media/signup3.d26f55ba.png"
           ]
         },
-        { imgSrc: "/static/media/pugger.4e2f6cd8.png", title: "Pugger", role: "UX/UI Design", github: "https://github.com/NessaDevelops/Pugger",
-          summ: "",
-          process: "",          
+        { imgSrc: "/static/media/pugger.4e2f6cd8.png", title: "Pugger", role: "Front-end / UX+UI Design", github: "https://github.com/NessaDevelops/Pugger",
+          summ: "Pugger was the first web game that I created. I loved Frogger growing up so I wanted to do a spin on it. Pugger is a game where you attempt to cross a river while avoiding poops in the water. The water flows in both directions while the poops flow in both directions with the water. The objective of the game is to cross to the other side of land without getting hit by poops or falling off of the water.",
+          process: "For this project I learned Createjs & how to make sprites. I created the sprites & game graphics with Illustrator. I decided to create my own collizion detection for this game.",          
           tech: "JavaScript, CreateJS, Illustrator",
           imgs: [
             "/static/media/pugger.4e2f6cd8.png"
           ]
         },
-        { imgSrc: "/static/media/nugalega.66ff7183.png", title: "NuGalega", role: "UX/UI Design", github: "https://github.com/erob2620/NUGalega",
-          summ: "",
-          process: "",          
+        { imgSrc: "/static/media/nugalega.66ff7183.png", title: "NuGalega", role: "Front-end / UX+UI Design", github: "https://github.com/erob2620/NUGalega",
+          summ: "NUGalega was a game I created with another student where the user controls a ship & shoots attacking ships that are shooting back. The objective is to destroy the opposing ships while avoiding their bullets.",
+          process: "I implemented the shop for the ship, scoring system & the UI. At the end of each round the user is able to go to to the shop to upgrade their ship & based on their selection the ships health, maximum heath, damage output, & bullet speed can be upgraded. I used Illustrator to create the UI elements. The game was created with CreateJS.",          
           tech: "JavaScript, CreateJS",
           imgs: [
             "/static/media/nugalega.66ff7183.png"
