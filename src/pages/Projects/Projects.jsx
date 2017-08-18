@@ -41,7 +41,14 @@ class Tile extends Component {
               <p>{this.props.role}</p>
               <a href={this.props.github}>GitHub</a>
               <Carousel imgs={this.props.imgs}></Carousel>
-              <p className="desc">{this.props.desc}</p>
+              <div className="desc">
+                <h3>Project Description</h3>
+                <p>{this.props.desc}</p>
+              </div>
+              <div className="tech">
+                <h3>Technologies Involved</h3>
+                <p>{this.props.tech}</p>
+              </div>
             </div>
         </Modal>
       </div>
@@ -55,7 +62,8 @@ Tile.propTypes = {
   role: React.PropTypes.string.isRequired,
   github: React.PropTypes.string.isRequired,
   imgs: React.PropTypes.arrayOf(String),
-  desc: React.PropTypes.string.isRequired
+  desc: React.PropTypes.string.isRequired,
+  tech: React.PropTypes.string.isRequired
 }
 
 class TileList extends Component {
@@ -65,6 +73,7 @@ class TileList extends Component {
       tiles: [
         { imgSrc: "/static/media/home.fdaef3db.png", title: "A Drop in the Bucket", role: "UX/UI Design", github: "https://github.com/NessaDevelops/A-Drop-in-the-Bucket",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi.",
+          tech: "Angular, Express, Node, MongoDB, JQuery, Mongoose, Nodemon, SASS, InDesign, PhotoShop, Illustrator, Grunt",
           imgs: [ 
             "/static/media/home.fdaef3db.png", 
             "/static/media/home2.5b0b3c94.png",
@@ -80,6 +89,7 @@ class TileList extends Component {
           ] },
         { imgSrc: "/static/media/splash.f923149e.png", title: "Primary Services", role: "UX/UI Design", github: "",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi.",
+          tech: "Illustrator, InDesign",
           imgs: [ 
             "/static/media/splash.f923149e.png", 
             "/static/media/jobsearch.c9024567.png"
@@ -87,6 +97,7 @@ class TileList extends Component {
         },
         { imgSrc: "/static/media/signup1.872c46ec.png", title: "Chronicled", role: "UX/UI Design", github: "https://github.com/chronicled/partner-portal-web",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi.", 
+          tech: "React, ES6, Redux, Webpack",
           imgs: [
             "/static/media/signup1.872c46ec.png",
             "/static/media/signup2.35575673.png",
@@ -95,12 +106,14 @@ class TileList extends Component {
         },
         { imgSrc: "/static/media/pugger.4e2f6cd8.png", title: "Pugger", role: "UX/UI Design", github: "https://github.com/NessaDevelops/Pugger",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi.", 
+          tech: "JavaScript, CreateJS, Illustrator",
           imgs: [
             "/static/media/pugger.4e2f6cd8.png"
           ]
         },
         { imgSrc: "/static/media/nugalega.66ff7183.png", title: "NuGalega", role: "UX/UI Design", github: "https://github.com/erob2620/NUGalega",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sem lectus, lacinia eget libero non, bibendum tincidunt justo. Duis diam turpis, efficitur id euismod porttitor, pretium hendrerit velit. Nam eu eleifend augue. Suspendisse interdum est a velit finibus, sed aliquam tellus finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean feugiat velit pharetra tempus tempus. Sed pharetra non erat nec rhoncus. Cras nec turpis blandit, pulvinar urna eget, luctus nisi.", 
+          tech: "JavaScript, CreateJS",
           imgs: [
             "/static/media/nugalega.66ff7183.png"
           ]
@@ -110,7 +123,7 @@ class TileList extends Component {
   }
   render() {
     const tileList = this.state.tiles.map((tile, index) =>
-      <Tile key={index} src={tile.imgSrc} title={tile.title} role={tile.role} github={tile.github} imgs={tile.imgs} desc={tile.desc}></Tile>
+      <Tile key={index} src={tile.imgSrc} title={tile.title} role={tile.role} github={tile.github} imgs={tile.imgs} desc={tile.desc} tech={tile.tech}></Tile>
     );
     return (
       <div className="tiles">{tileList}</div>

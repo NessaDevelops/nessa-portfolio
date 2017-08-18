@@ -20,9 +20,9 @@ class About extends Component {
               <p>26</p>
               <h3>Living In:</h3>
               <p>Houston, Texas</p>
-              <h3>Front-end Development:</h3>
-              <p>HTML5, CSS3, JavaScript, Angular, React, Redux</p>
-              <h3>Back-end Development:</h3>
+              <h3>Front-end:</h3>
+              <p>HTML5, CSS3, JavaScript, Angular, React, Redux, ES6</p>
+              <h3>Back-end:</h3>
               <p>Node, MongoDB</p>
               <h3>Design:</h3>
               <p>Illustrator, Photoshop, InDesign</p>
