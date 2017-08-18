@@ -10,7 +10,7 @@ class CarouselInput extends Component {
     const index = this.props.index + 1;  
     if (index == 1) {
       return (
-        <input type="radio" id={index} name="thumb" checked="checked" className="carousel__activator"/>
+        <input type="radio" id={index} name="thumb" defaultChecked className="carousel__activator"/>
       )
     } else {
       return (

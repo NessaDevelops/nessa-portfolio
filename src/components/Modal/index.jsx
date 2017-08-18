@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import anime from 'animejs';
+// import anime from 'animejs';
 import './styles.css';
 
 class Modal extends Component {
