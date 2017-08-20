@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Route, BrowserRouter } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-import Projects from './pages/Projects/Projects.jsx';
-import Contact from './pages/Contact/Contact.jsx';
+import Projects from './pages/Projects/Projects';
+import Contact from './pages/Contact/Contact';
 import NotFound from './pages/404Page/404Page';
 
 class Routes extends Component {

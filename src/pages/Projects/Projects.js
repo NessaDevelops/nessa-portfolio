@@ -76,56 +76,56 @@ class TileList extends Component {
     super(props);
     this.state = {
       tiles: [
-        { imgSrc: "/static/media/home.fdaef3db.png", title: "A Drop in the Bucket", role: "Front-end / Back-end / UX+UI Design", github: "https://github.com/NessaDevelops/A-Drop-in-the-Bucket",
+        { imgSrc: require("../../imgs/Bucketlist/home.png"), title: "A Drop in the Bucket", role: "Front-end / Back-end / UX+UI Design", github: "https://github.com/NessaDevelops/A-Drop-in-the-Bucket",
           summ: "A Drop in the Bucket is a web application that allows a user to create lists that goals are added to. These goals are aspirations that the user wants to accomplish in their lifetime. A list can either be made for solo use or completed with others. After completing a goal it is then stored as a memory where the user can leave a description & pictures to remember the event.",
           process: "I designed & programmed the web application in a total of 8 weeks while learning MEAN stack in the process. The designs were crafted using Adobe Illustrator, Indesign, & Photoshop. The front-end was done with Angular as I wanted to make it a SPA. The back-end was Node/Express with MongoDB for the database. This project included user accounts & a map API using OpenLayers.  This allowed the user to either create a custom goal or select premade goals based on location from a map. When the goal is completed the user is able to turn the goal into a memory with a description & photos - allowing them to keep a memory album of the goals they have finished.",
           tech: "Angular, Express, Node, MongoDB, JQuery, Mongoose, Nodemon, SASS, InDesign, PhotoShop, Illustrator, Grunt",
           imgs: [ 
-            "/static/media/home.fdaef3db.png", 
-            "/static/media/home2.5b0b3c94.png",
-            "/static/media/home3.97b2af4e.png",
-            "/static/media/signup.9aab8e14.png",
-            "/static/media/login.62b91427.png",
-            "/static/media/create-bucketlist.7a16600c.png",
-            "/static/media/create-goal.332ab29c.png",
-            "/static/media/bucketlist.5c04484e.png",
-            "/static/media/memory-album.f1b59e40.png",
-            "/static/media/memory.0d478455.png",
-            "/static/media/achievement.30d20648.png"
+            require("../../imgs/Bucketlist/home.png"), 
+            require("../../imgs/Bucketlist/home2.png"),
+            require("../../imgs/Bucketlist/home3.png"),
+            require("../../imgs/Bucketlist/signup.png"),
+            require("../../imgs/Bucketlist/login.png"),
+            require("../../imgs/Bucketlist/create-bucketlist.png"),
+            require("../../imgs/Bucketlist/create-goal.png"),
+            require("../../imgs/Bucketlist/bucketlist.png"),
+            require("../../imgs/Bucketlist/memory-album.png"),
+            require("../../imgs/Bucketlist/memory.png"),
+            require("../../imgs/Bucketlist/achievement.png")
           ] },
-        { imgSrc: "/static/media/splash.f923149e.png", title: "Primary Services", role: "UX+UI Design", github: "",
+        { imgSrc: require("../../imgs/Primary/splash.png"), title: "Primary Services", role: "UX+UI Design", github: "",
           summ: "Primary Services contacted me to work on redesigning & implementing a new way to search & view jobs on their current website. Their job search linked to Job Diva's web application & they wanted to have their own job search located on their website.",
           process: "I researched UI & UX practices used by other successful job recruitment company websites & showed my findings to the team I was working with at Primary Services. I crafted mockups using Illustrator & InDesign. We had meetings to discuss the process & I made revisions based on the feedback. I wanted to keep the color scheme & overall feel of the current website while giving the new designs a more modern feel that will also mesh if Primary Services were to modernized their website design in the future.",
           tech: "Illustrator, InDesign",
           imgs: [ 
-            "/static/media/splash.f923149e.png", 
-            "/static/media/jobsearch.c9024567.png"
+            require("../../imgs/Primary/splash.png"),
+            require("../../imgs/Primary/jobsearch.png")
           ]
         },
-        { imgSrc: "/static/media/signup1.872c46ec.png", title: "Chronicled", role: "Front-end / UX+UI Design", github: "https://github.com/chronicled/partner-portal-web",
+        { imgSrc: require("../../imgs/Chronicled/signup1.png"), title: "Chronicled", role: "Front-end / UX+UI Design", github: "https://github.com/chronicled/partner-portal-web",
           summ: "Chronicled needed to hire interns for a team to work on their partner web portal. The partner web portal was not styled yet so the CSS needed to be added & th sign up flow was not complete.",
           process: "For this project I learned React & Redux. This was the first time I had worked with a flux based technology. I worked with the designer to add his design mockups to the partner web portal using HTML5, CSS3, & flexbox -specifically. Three steps for the sign up flow needed to be added. I updated & deleted some of the existing components that were uneccessary while creating new ones. I created the logic & design for the password  strength indicator.",          
           tech: "React, ES6, Redux, Webpack",
           imgs: [
-            "/static/media/signup1.872c46ec.png",
-            "/static/media/signup2.35575673.png",
-            "/static/media/signup3.d26f55ba.png"
+            require("../../imgs/Chronicled/signup1.png"),
+            require("../../imgs/Chronicled/signup2.png"),
+            require("../../imgs/Chronicled/signup3.png")
           ]
         },
-        { imgSrc: "/static/media/pugger.4e2f6cd8.png", title: "Pugger", role: "Front-end / UX+UI Design", github: "https://github.com/NessaDevelops/Pugger",
+        { imgSrc: require("../../imgs/Pugger/pugger.png"), title: "Pugger", role: "Front-end / UX+UI Design", github: "https://github.com/NessaDevelops/Pugger",
           summ: "Pugger was the first web game that I created. I loved Frogger growing up so I wanted to do a spin on it. Pugger is a game where you attempt to cross a river while avoiding poops in the water. The water flows in both directions while the poops flow in both directions with the water. The objective of the game is to cross to the other side of land without getting hit by poops or falling off of the water.",
           process: "For this project I learned Createjs & how to make sprites. I created the sprites & game graphics with Illustrator. I decided to create my own collizion detection for this game.",          
           tech: "JavaScript, CreateJS, Illustrator",
           imgs: [
-            "/static/media/pugger.4e2f6cd8.png"
+            require("../../imgs/Pugger/pugger.png")
           ]
         },
-        { imgSrc: "/static/media/nugalega.66ff7183.png", title: "NuGalega", role: "Front-end / UX+UI Design", github: "https://github.com/erob2620/NUGalega",
+        { imgSrc: require("../../imgs/NuGalega/nugalega.png"), title: "NuGalega", role: "Front-end / UX+UI Design", github: "https://github.com/erob2620/NUGalega",
           summ: "NUGalega was a game I created with another student where the user controls a ship & shoots attacking ships that are shooting back. The objective is to destroy the opposing ships while avoiding their bullets.",
           process: "I implemented the shop for the ship, scoring system & the UI. At the end of each round the user is able to go to to the shop to upgrade their ship & based on their selection the ships health, maximum heath, damage output, & bullet speed can be upgraded. I used Illustrator to create the UI elements. The game was created with CreateJS.",          
           tech: "JavaScript, CreateJS",
           imgs: [
-            "/static/media/nugalega.66ff7183.png"
+            require("../../imgs/NuGalega/nugalega.png")
           ]
         }
       ]
