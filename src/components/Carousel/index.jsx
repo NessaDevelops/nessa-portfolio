@@ -8,7 +8,7 @@ class CarouselInput extends Component {
   }
   render() {
     const index = this.props.index + 1;  
-    if (index == 1) {
+    if (index === 1) {
       return (
         <input type="radio" id={index} name="thumb" defaultChecked className="carousel__activator"/>
       )
