@@ -1,0 +1,47 @@
+.Primary {
+  padding: 12px;
+  font-size: 20px;
+  font-family: OpenSans;
+  text-transform: uppercase;  
+  color: #FFF;
+  background-color: #2AB0C5;
+  border: none;
+  border-radius: 3px;
+}
+
+.Medium {
+  width: 35%;
+}
+
+.Effect {
+  transition: all 0.2s linear 0s;
+}
+  
+.Effect:before {
+  content: url('../../imgs/Icons/right-arrow.png');
+  width: 10px;
+  height: 10px;
+  font-size: 15px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 40px;
+  transition: all 0.2s linear 0s;
+}
+  
+.Effect:hover {
+  text-indent: -20px;
+  filter: brightness(85%);
+}
+
+.Effect:hover:before {
+  opacity: 1;
+  text-indent: 0px;
+}
+
+/* transition: all 0.5s ease; */

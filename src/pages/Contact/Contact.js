@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Contact.css';
 import NavBar from '../../components/NavBar';
+import Button from '../../components/Button';
 // import ValidateForm from './form';
 // import $ from 'jquery';
 
@@ -125,8 +126,7 @@ class Contact extends Component {
                 required />
               <div className="error" id="messageError" />
             </div>
-            <button className="btn btn-primary"
-              onClick={this.handleSubmit}>submit</button>
+            <Button className="Effect" size="Medium" label="Submit" onClick={this.handleSubmit} />
           </form>
           <a href="https://www.linkedin.com/in/jenessa-stabler"><div className="linkedin"></div></a>
         </div>

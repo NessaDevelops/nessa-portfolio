@@ -26,16 +26,7 @@ textarea {
     height: 180px;
 }
 
-.btn {
-    width: 35%;
-    margin-top: 20px;
-    color: #FFF;
-    background-color: #2AB0C5;
-    border: none;
-    text-transform: uppercase;
-}
-
-.btn, input, textarea {
+input, textarea {
     transition: all 0.5s ease;
     padding: 12px;
     font-size: 20px;
@@ -47,10 +38,6 @@ textarea {
 
 input:focus, textarea:focus {
     background-color: #919FAF;
-}
-
-.btn:focus {
-    filter: brightness(85%);
 }
 
 ::-webkit-input-placeholder {

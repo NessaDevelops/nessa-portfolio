@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import styles from './styles.css';
 
-class ChButton extends Component {
+class Button extends Component {
   render() {
     const DEFAULT_SIZE = 'Large';
     const DEFAULT_STYLE = 'Primary';
     const sizeName = this.props.size || DEFAULT_SIZE;
     const styleName = this.props.style || DEFAULT_STYLE;
-    let classString = `${styles[sizeName]} ${styles[styleName]} `;
+    let classString = `${sizeName} ${styleName}`;
 
     return (
       <button
@@ -23,7 +23,7 @@ class ChButton extends Component {
   }
 };
 
-ChButton.propTypes = {
+Button.propTypes = {
   label: React.PropTypes.string.isRequired,
   size: React.PropTypes.string,
   style: React.PropTypes.string,
@@ -34,4 +34,4 @@ ChButton.propTypes = {
   className: React.PropTypes.string
 }
 
-export default ChButton;
+export default Button;
